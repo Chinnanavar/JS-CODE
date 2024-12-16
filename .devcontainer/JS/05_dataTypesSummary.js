@@ -46,10 +46,34 @@ const anotherid = Symbol('123')
 // console.log(info);
 // console.log(typeof info);
 
-const myFunction = function() {
-    console.log("hello world");
+// const myFunction = function() {
+//     console.log("hello world");
     
+// }
+
+// console.log(myFunction);
+
+//********************************** Memory *******************************/
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myYoutubeName = "yash"
+
+let anotherName = myYoutubeName
+
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "userOne@google.com",
+    upi: "user@ypl",
 }
 
-console.log(myFunction);
+let userTwo = userOne
 
+userTwo.email = "userTwo@gamil.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
