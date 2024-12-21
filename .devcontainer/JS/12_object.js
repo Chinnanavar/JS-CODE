@@ -62,11 +62,30 @@ const user = [
 ]
 
 user[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('isLoggefIn'));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('isLoggefIn'));
 
+//***** destructing  **********//
 
+const course = {
+    coursename: "js in hindi",
+    price: 999,
+    courseInstructor: "yash"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: ins} = course
+
+console.log(ins);
+
+// {
+//     "name": "yash",
+//     "coursename": "js in hindi",
+//     "price": "free",
+// }
+ 
